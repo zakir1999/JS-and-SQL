@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Never Create Strings as Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = "John is not good man";        // x is a string
+let y = new String("John");  // y is an object
+let z=x.slice(12);
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
